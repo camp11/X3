@@ -211,15 +211,8 @@ if ($type == 'join' || $command == 'Help') {
     $text .= "==[Main Keywords]==";
     $text .= "> \n";
     $text .= "> welcome\n"; 
-    $text .= "> Crew\n";
-    $text .= "> Judges\n";
-    $text .= "> Sponsored\n";
-    $text .= "> SupportedBy\n";
-    $text .= "> Ready\n"; 
-    $text .= "> Nnestore\n";
-    $text .= "> Azkashop\n";
-    $text .= "> Dwiyahshop\n";
-    $text .= "> Creator\n";
+    $text .= "> AllCrew\n";
+    $text .= "> NGVC\n";
     $text .= "> /shalat [namakota]\n";
     $text .= "> /zodiak [tanggallahir]\n";
     $text .= "> /lokasi [namakota]\n";
