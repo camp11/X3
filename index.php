@@ -869,7 +869,7 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
-	    if ($command == 'Ok' || $command == 'ok' ) {
+	    if ($command == 'Ok' || $command == 'Oke' ) {
 
         $balas = array(
             'replyToken' => $replyToken,
@@ -947,7 +947,7 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
-	    if ($command == 'NGVC' || $command == 'logo' ) {
+	    if ($command == 'NGVC' || $command == 'Ngvc' ) {
         $balas = array(
             'replyToken' => $replyToken,
             'messages' => array(
