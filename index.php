@@ -245,8 +245,8 @@ if ($type == 'join' || $command == 'Wc') {
     $text .= " \n";
     $text .= "       ⤵Selamat Datang di⤵\n";
     $text .= "=======================\n";	
-    $text .= "      >ⓜⓐⓘⓝ ⓡⓞⓞⓜ<\n";	
-    $text .= "BIRTHDAY EVENT ANNE - 27th\n";
+    $text .= "      >NGVC-Family Room<\n";	
+    $text .= "NEXT GENERATION VOICE COMUNITY";
     $text .= "=======================\n";	
     $text .= "  Jangan Lupa Cek Note ya\n";
     $text .= "[Salken dari Saya]->$profil->displayName\n";
