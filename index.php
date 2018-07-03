@@ -6,8 +6,8 @@ pyupyu
 require_once('./line_class.php');
 require_once('./unirest-php-master/src/Unirest.php');
 
-$channelAccessToken = ''; //sesuaikan 
-$channelSecret = '';//sesuaikan
+$channelAccessToken = 'FXnW2DhqDNfsxVRjAsjYeSmwiplYvU2q/O34Uzlbh2l3Qz6Q5zOtnci8UUg5X5O5nKRfI2BmT0cVRYKLcyh1tZQZUMGTZYSRkqwN51oHgNutD84yY9y/psAYiylbNlIcSZYApQfchOA8wqiTNz+2nwdB04t89/1O/w1cDnyilFU='; //sesuaikan 
+$channelSecret = '84c687bb84ed682e571ddcea6a251279';//sesuaikan
 
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 
@@ -717,7 +717,7 @@ if($message['type']=='text') {
             'messages' => array(
                 array(
                     'type' => 'text',
-                    'text' => 'Pagi juga, Senyum ya! '.$profil->displayName
+                    'text' => 'Pagi juga,Sobat NGVC, Senyum ya! '.$profil->displayName
                 )
             )
         );
@@ -912,8 +912,8 @@ if($message['type']=='text') {
             'messages' => array(
                 array (
   'type' => 'imagemap',
-  'baseUrl' => '',
-  'altText' => 'WELCOME TO ',
+  'baseUrl' => 'https://res.cloudinary.com/dmvpko25b/image/upload/v1530629198/Welcome',
+  'altText' => 'WELCOME TO NGVC Family Room',
   'baseSize' => 
   array (
     'height' => 1040,
@@ -924,7 +924,7 @@ if($message['type']=='text') {
     0 => 
     array (
       'type' => 'uri',
-      'uri' => 'http://',
+      'uri' => 'https://www.smule.com/NGVC_OFFICIAL',
       'area' => 
       array (
         'x' => 0,
@@ -936,12 +936,47 @@ if($message['type']=='text') {
     1 => 
     array (
       'type' => 'message',
-      'text' => 'ADMIN',
+      'text' => 'AllCrew',
       'area' => 
       array (
         'x' => 520,
         'y' => 0,
         'width' => 520,
+        'height' => 1040,
+      ),
+    ),
+  ),
+)
+            )
+        );
+    }
+}
+//pesan bergambar
+if($message['type']=='text') {
+	    if ($command == 'NGVC' || $command == 'logo' ) {
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array (
+  'type' => 'imagemap',
+  'baseUrl' => 'https://res.cloudinary.com/dmvpko25b/image/upload/v1530630880/logo',
+  'altText' => 'NGVC Logo',
+  'baseSize' => 
+  array (
+    'height' => 1040,
+    'width' => 1040,
+  ),
+  'actions' => 
+  array (
+    0 => 
+    array (
+      'type' => 'uri',
+      'linkUri' => 'https://www.smule.com/NGVC_OFFICIAL',
+      'area' => 
+      array (
+        'x' => 0,
+        'y' => 0,
+        'width' => 1040,
         'height' => 1040,
       ),
     ),
@@ -984,13 +1019,13 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
-	    if ($command == 'Admin' || $command == 'ADMIN' ) {
+	    if ($command == 'AllCrew' || $command == 'Crew' ) {
         $balas = array(
             'replyToken' => $replyToken,
             'messages' => array(
                 array (
   'type' => 'template',
-  'altText' => 'MANAGEMENT',
+  'altText' => 'MANAGEMENT NGVC',
   'template' => 
   array (
     'type' => 'image_carousel',
@@ -998,47 +1033,17 @@ if($message['type']=='text') {
     array (
       0 => 
       array (
-        'imageUrl' => 'https://res.cloudinary.com/eds0101/image/upload/v1527924308/ANNE/CREW%20JUDGES/Untitled11.jpg',
+        'imageUrl' => 'https://res.cloudinary.com/dmvpko25b/image/upload/v1530630512/Admin/1.jpg',
         'action' => 
         array (
           'type' => 'uri',
           'label' => 'SMULE',
-          'uri' => 'http://smule.com/nneKBS',
+          'uri' => 'http://smule.com/NGVC_UTHE',
         ),
       ),
       1 => 
       array (
-        'imageUrl' => 'https://res.cloudinary.com/eds0101/image/upload/v1527885195/ANNE/CREW%20JUDGES/1.jpg',
-        'action' => 
-        array (
-          'type' => 'uri',
-          'label' => 'SMULE',
-          'uri' => 'http://smule.com/EBS_BRenoJL_KBS',
-        ),
-      ),
-      2 => 
-      array (
-        'imageUrl' => 'https://res.cloudinary.com/eds0101/image/upload/v1527885205/ANNE/CREW%20JUDGES/2.jpg',
-        'action' => 
-        array (
-          'type' => 'uri',
-          'label' => 'SMULE',
-          'uri' => 'http://smule.com/VIF_lien',
-        ),
-      ),
-      3 => 
-      array (
-        'imageUrl' => 'https://res.cloudinary.com/eds0101/image/upload/v1527885197/ANNE/CREW%20JUDGES/3.jpg',
-        'action' => 
-        array (
-          'type' => 'uri',
-          'label' => 'SMULE',
-          'uri' => 'http://smule.com/_CiNTA7D_PSE_SWX',
-        ),
-      ),
-      4 => 
-      array (
-        'imageUrl' => 'https://res.cloudinary.com/eds0101/image/upload/v1527885191/ANNE/CREW%20JUDGES/4.jpg',
+        'imageUrl' => 'https://res.cloudinary.com/dmvpko25b/image/upload/v1530630511/Admin/2.jpg',
         'action' => 
         array (
           'type' => 'uri',
@@ -1046,34 +1051,84 @@ if($message['type']=='text') {
           'uri' => 'http://smule.com/KVA1_LUFFY_NGVC',
         ),
       ),
-      5 => 
+      2 => 
       array (
-        'imageUrl' => 'https://res.cloudinary.com/eds0101/image/upload/v1527885202/ANNE/CREW%20JUDGES/5.jpg',
+        'imageUrl' => 'https://res.cloudinary.com/dmvpko25b/image/upload/v1530630511/Admin/3.jpg',
         'action' => 
         array (
           'type' => 'uri',
           'label' => 'SMULE',
-          'uri' => 'http://smule.com/KBS_sailup',
+          'uri' => 'http://smule.com/___pratama_NGVC',
+        ),
+      ),
+      3 => 
+      array (
+        'imageUrl' => 'https://res.cloudinary.com/dmvpko25b/image/upload/v1530630510/Admin/4.jpg',
+        'action' => 
+        array (
+          'type' => 'uri',
+          'label' => 'SMULE',
+          'uri' => 'http://smule.com/VARIN_NGVC',
+        ),
+      ),
+      4 => 
+      array (
+        'imageUrl' => 'https://res.cloudinary.com/dmvpko25b/image/upload/v1530630508/Admin/5.jpg',
+        'action' => 
+        array (
+          'type' => 'uri',
+          'label' => 'SMULE',
+          'uri' => 'http://smule.com/NGVC_UWA',
+        ),
+      ),
+      5 => 
+      array (
+        'imageUrl' => 'https://res.cloudinary.com/dmvpko25b/image/upload/v1530630508/Admin/6.jpg',
+        'action' => 
+        array (
+          'type' => 'uri',
+          'label' => 'SMULE',
+          'uri' => 'http://smule.com/_miss_Bohay_23',
         ),
       ),
       6 => 
       array (
-        'imageUrl' => 'https://res.cloudinary.com/eds0101/image/upload/v1527885198/ANNE/CREW%20JUDGES/6.jpg',
+        'imageUrl' => 'https://res.cloudinary.com/dmvpko25b/image/upload/v1530630507/Admin/7.jpg',
         'action' => 
         array (
           'type' => 'uri',
           'label' => 'SMULE',
-          'uri' => 'http://smule.com/_DFS_CICIK_NL98',
+          'uri' => 'http://smule.com/SAR_FAJARNGVCKSP',
         ),
       ),
       7 => 
       array (
-        'imageUrl' => 'https://res.cloudinary.com/eds0101/image/upload/v1527885199/ANNE/CREW%20JUDGES/7.jpg',
+        'imageUrl' => 'https://res.cloudinary.com/dmvpko25b/image/upload/v1530630507/Admin/8.jpg',
         'action' => 
         array (
           'type' => 'uri',
           'label' => 'SMULE',
-          'uri' => 'http://smule.com/AVRILMelvo_KBS',
+          'uri' => 'http://smule.com/NGVC_GiOs',
+        ),
+      ),
+      8 => 
+      array (
+        'imageUrl' => 'https://res.cloudinary.com/dmvpko25b/image/upload/v1530630507/Admin/9.jpg',
+        'action' => 
+        array (
+          'type' => 'uri',
+          'label' => 'SMULE',
+          'uri' => 'http://smule.com/NGVC_LARAS',
+        ),
+      ),
+      9 => 
+      array (
+        'imageUrl' => 'https://res.cloudinary.com/dmvpko25b/image/upload/v1530630505/Admin/10.jpg',
+        'action' => 
+        array (
+          'type' => 'uri',
+          'label' => 'SMULE',
+          'uri' => 'http://smule.com/NGVC_winny213__',
         ),
       ),
     ),
