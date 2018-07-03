@@ -239,7 +239,8 @@ if ($type == 'join' || $command == 'Wc') {
     $text .= "       ⤵Selamat Datang di⤵\n";
     $text .= "=======================\n";	
     $text .= "      >NGVC-Family Room<\n";	
-    $text .= "NEXT GENERATION VOICE COMUNITY";
+    $text .= "   NEXT GENERATION";
+    $text .= "   VOICE COMUNITY";
     $text .= "=======================\n";	
     $text .= "  Jangan Lupa Cek Note ya\n";
     $text .= "[Salken dari Saya]->$profil->displayName\n";
@@ -917,7 +918,7 @@ if($message['type']=='text') {
     0 => 
     array (
       'type' => 'uri',
-      'uri' => 'https://www.smule.com/NGVC_OFFICIAL',
+      'linkUri' => 'https://www.smule.com/NGVC_OFFICIAL',
       'area' => 
       array (
         'x' => 0,
