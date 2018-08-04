@@ -240,7 +240,7 @@ if ($type == 'text' || $command == 'Wc') {
     $text .= "=======================\n";	
     $text .= "      >NGVC-Family Room<\n";	
     $text .= "       NEXT GENERATION\n";
-    $text .= "       VOICE COMUNITY\n";
+    $text .= "     🎤VOICE COMUNITY🎤\n";
     $text .= "=======================\n";	
     $text .= "  Jangan Lupa Cek Note ya\n";
     $text .= "[Salken dari Saya]->$profil->displayName\n";
