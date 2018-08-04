@@ -233,17 +233,40 @@ if ($type == 'join' || $command == 'Help') {
 }
 #-------------------------[Function]-------------------------#
 //show menu, saat join dan command,menu
-if ($type == 'join' || $command == 'Wc') {
+if ($type == 'text' || $command == 'Wc') {
     $text .= "====[HALLO WELCOME]====";
     $text .= " \n";
     $text .= "       ⤵Selamat Datang di⤵\n";
     $text .= "=======================\n";	
     $text .= "      >NGVC-Family Room<\n";	
-    $text .= "   NEXT GENERATION";
-    $text .= "   VOICE COMUNITY";
+    $text .= "       NEXT GENERATION\n";
+    $text .= "       VOICE COMUNITY\n";
     $text .= "=======================\n";	
     $text .= "  Jangan Lupa Cek Note ya\n";
     $text .= "[Salken dari Saya]->$profil->displayName\n";
+    $balas = array(
+        'replyToken' => $replyToken,
+        'messages' => array(
+            array(
+                'type' => 'text',
+                'text' => $text
+            )
+        )
+    );
+}
+#-------------------------[Function]-------------------------#
+//show menu, saat join dan command,menu
+if ($type == 'join' || $command == 'dev') {
+    $text .= " \n";
+    $text .= " 􀀹⚡⚡⚡⚡⚡⚡⚡⚡􀀹\n";
+    $text .= "======[HALLO NGVC]======";
+    $text .= " \n";
+    $text .= "Terima Kasih Atas Invite nya\n";
+    $text .= "=======================\n";	
+    $text .= "=>Developer BOT ketik Creator\n";
+    $text .= "=>Jangan Lupa BOTnya di-Add\n";
+    $text .= "    dulu ya 􀀅􀀰\n";
+    $text .= " 􀀹⚡⚡⚡⚡⚡⚡⚡⚡􀀹\n";
     $balas = array(
         'replyToken' => $replyToken,
         'messages' => array(
