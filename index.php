@@ -734,7 +734,7 @@ if($message['type']=='text') {
             'messages' => array(
                 array(
                     'type' => 'text',
-                    'text' => 'Pagi juga,Sobat NGVC, Senyum ya! '.$profil->displayName
+                    'text' => 'Pagi juga '.$profil->displayName.' Senyum ya!'
                 )
             )
         );
@@ -749,7 +749,7 @@ if($message['type']=='text') {
             'messages' => array(
                 array(
                     'type' => 'text',
-                    'text' => 'Siang juga, Jangan lupa makan siang ya '.$profil->displayName
+                    'text' => 'Siang juga '.$profil->displayName', Jangan lupa makan siang ya'
                 )
             )
         );
