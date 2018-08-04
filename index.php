@@ -839,7 +839,7 @@ if($message['type']=='text') {
             'messages' => array(
                 array(
                     'type' => 'text',
-                    'text' => 'HALLO apa kabar'.$profil->displayName
+                    'text' => 'HALLO apa kabar '.$profil->displayName.' ?'
                 )
             )
         );
